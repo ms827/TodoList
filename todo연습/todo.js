@@ -39,8 +39,8 @@ const createToDoList = () => {
   const todoList = getToDoList()
 
   const itemsLeft = todoList.filter((todo) => !todo.isCompleted).length
-  // 완료되지 않은 할 일의 수를 화면에 표시
-  document.querySelector('.left-items').textContent = `해야 할 일: ${itemsLeft}`
+  // // 완료되지 않은 할 일의 수를 화면에 표시
+  document.querySelector('.todo-left').textContent = `해야 할 일: ${itemsLeft}`
 
   todoList.forEach((todo) => {
     // list요소 생성
